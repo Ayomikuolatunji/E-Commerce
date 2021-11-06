@@ -15,7 +15,7 @@ const CartValue=Styled.span`
     bottom: 100px;
 `
 const Shop=Styled.div`
-   font-size:25px;
+   font-size:20px;
 `
 export default function CartDisplay() {
     return (
