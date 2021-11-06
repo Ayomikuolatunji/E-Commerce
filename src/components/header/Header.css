@@ -1,0 +1,66 @@
+/* logo styles */
+.brand-wrapper{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+}
+.brand-wrapper img{
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* search input  */
+.search-input{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* shopping cart styles */
+.cart{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart li{
+    margin-left: 10px;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main cartdisplay styles */
+

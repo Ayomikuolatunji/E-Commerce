@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+.nav-link{
+    color: #ffdf;
+    border-radius: 10px;
+}
+/* .cart{
+    background-color: red;
+    right: 0;
+    position: absolute;
+} */
+
+.text-title h1{
+    color: pink;
+    font-family: cursive;
+    font-size: 50px;
+}
+
+.text-title h1 strong{
+    color: orange;
+}
+.photo{
+    transition: all 2s ease-out;
+    height: 170px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+}
+.menu-item{
+    width: 250px;
+    text-align: center;
+    background-color: rgb(246, 246, 246);
+    border: none;
+    outline: none;
+}
+.menu-item:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2),-0px -0px 10px rgba(0,0,0,0.2);
+}
+.cart-btn{
+    background-color: lightblue;
+    color: #000;
+    transition: all 1s ease;
+    font-size: 1.4rem;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    margin-top: 70px;
+    right: -150px;
+    border-radius: 10px 0 0 0;
+    padding: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.img-container:hover .cart-btn{
+    right: 0px;
+}
+
+.img-container:hover .photo{
+    transform: scale(1);
+    transition: all 2s ease-out
+}
+.cart-btn:hover{
+    cursor: pointer;
+    background-color: rgb(84, 84, 230);
+}
+.img-container{
+    transition: all 1s ease-in;
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+p{
+    line-height: 2;
+}
+p .detail{
+    font-weight: bolder;
+}
+
+.is-white{
+    padding: 10px;
+    background-color: yellow;
+}
+.btn-black{
+    background-color: transparent;
+    text-transform: capitalize;
+    font-size: 0.8rem !important;
+    color: #000;
+    border-radius: 0 !important;
+    border: 0.1 rgb(19, 19, 19);
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
+
+.App {
+  text-align: center;
+  font-family: "Roboto";
+  letter-spacing: 0.1rem;
+}
+
+.con {
+  margin: 5% auto;
+  width: 335px;
+  max-width: 100%;
+  height: 430px;
+  background: white;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.2;
+  background-color: #303030;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.item-details {
+  /* bottom: 0;
+  margin-bottom: 5px;
+  margin-left: 20px; */
+  color: #fff;
+  font-weight: bolder;
+}
+
+.item-details__title {
+  font-size: 18px;
+}
+
+.item-details__amount {
+  font-weight: bolder;
+  background-color: rgb(255, 193, 77);
+  padding: 10px;
+  width: 100%;
+}
+
+.checkout {
+  background: #84a17d; /* fallback for old browsers */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 430px;
+  width: 100%;
+}
+
+.checkout-form {
+  padding: 20px 20px;
+}
+
+.checkout-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.checkout-field label {
+  text-align: left;
+  color: #e0eafc;
+  font-size: 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.checkout-field input {
+  background-color: transparent;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  color: #e0eafc;
+  height: 35px;
+  padding-left: 10px;
+}
+
+.checkout-field input:focus {
+  background-color: transparent;
+  outline: none;
+}
+
+.paystack-button {
+  cursor: pointer;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background-color: #bfbfbf;
+  font-weight: bold;
+  color: #e0eafc;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
+  margin-top: 40px;
+}
+
+.paystack-button:hover {
+  background-color: #dadada;
+}
+
+.paystack-button:focus {
+  outline: none;
+}
+
+.addNavbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
