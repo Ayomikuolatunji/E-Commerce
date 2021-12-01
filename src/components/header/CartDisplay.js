@@ -36,7 +36,7 @@ export default function CartDisplay() {
                                            <span className="mt-3">Cart</span>
                                         </div>
                                          <CartValue>
-                                             {value.cartDisplay}
+                                             {value.cartDisplay ? NaN :"" }
                                          </CartValue>
                                        </Cartstyle>
                                    </div>
